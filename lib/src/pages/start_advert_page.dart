@@ -74,7 +74,9 @@ class _StartAdvertPageState extends State<StartAdvertPage> {
               ),
               const SizedBox(height: 10.0),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, '/setup');
+                },
                 child: Container(
                   padding: const EdgeInsets.symmetric(
                       vertical: 15.0, horizontal: 125.0),

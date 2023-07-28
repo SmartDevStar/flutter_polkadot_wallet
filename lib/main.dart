@@ -19,13 +19,20 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'DCY CRYPTO WALLET',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
         fontFamily: 'Archivo',
       ),
-      home: const StartAdvertPage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const StartAdvertPage(),
+        '/setup': (context) => const SetupWalletPage(),
+        '/import-wallet': (context) => const ImportFromSeedPage(),
+        '/create-wallet': (context) => const CreateNewWalletPage(),
+        '/secure-wallet': (context) => const SecureYourWalletPage(),
+      },
     );
   }
 }
