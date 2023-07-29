@@ -32,9 +32,9 @@ class _CreateNewWalletPageState extends State<CreateNewWalletPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: const Color(0xFF080A0C),
         appBar: AppBar(
-          backgroundColor: Colors.black,
+          backgroundColor: Colors.transparent,
           leading: IconButton(
             icon: const Icon(Icons.chevron_left, color: Colors.white),
             onPressed: () {

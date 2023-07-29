@@ -28,7 +28,7 @@ class _StartAdvertPageState extends State<StartAdvertPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: const Color(0xFF080A0C),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,

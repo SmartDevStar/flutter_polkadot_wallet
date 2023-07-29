@@ -34,9 +34,9 @@ class _ImportFromSeedPageState extends State<ImportFromSeedPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: const Color(0xFF080A0C),
         appBar: AppBar(
-          backgroundColor: Colors.black,
+          backgroundColor: Colors.transparent,
           leading: IconButton(
             icon: const Icon(Icons.chevron_left, color: Colors.white),
             onPressed: () {
@@ -233,7 +233,9 @@ class _ImportFromSeedPageState extends State<ImportFromSeedPage> {
             _newPassword.value == _confirmPassword.value;
         return isAvailableToImport
             ? TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, '/wallet-main');
+                },
                 child: Container(
                   width: MediaQuery.of(context).size.width * 0.9,
                   height: 55,
@@ -258,9 +260,7 @@ class _ImportFromSeedPageState extends State<ImportFromSeedPage> {
                 ),
               )
             : TextButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, '/import-seed');
-                },
+                onPressed: () {},
                 child: Container(
                   width: MediaQuery.of(context).size.width * 0.9,
                   height: 55,

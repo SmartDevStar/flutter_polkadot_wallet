@@ -32,6 +32,7 @@ class MyApp extends StatelessWidget {
         '/import-wallet': (context) => const ImportFromSeedPage(),
         '/create-wallet': (context) => const CreateNewWalletPage(),
         '/secure-wallet': (context) => const SecureYourWalletPage(),
+        '/wallet-main': (context) => const WalletMainPage(),
       },
     );
   }
