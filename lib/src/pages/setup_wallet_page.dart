@@ -12,8 +12,9 @@ class _SetupWalletPageState extends State<SetupWalletPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-          backgroundColor: const Color(0xFF080A0C),
-          body: Center(
+        backgroundColor: const Color(0xFF080A0C),
+        body: Center(
+          child: SingleChildScrollView(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
@@ -76,7 +77,9 @@ class _SetupWalletPageState extends State<SetupWalletPage> {
                 const SizedBox(height: 10.0),
               ],
             ),
-          )),
+          ),
+        ),
+      ),
     );
   }
 }
