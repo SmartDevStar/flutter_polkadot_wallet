@@ -38,6 +38,7 @@ dependencies:
   flutter_native_splash: ^2.3.1
   multi_value_listenable_builder: ^0.0.2
   random_color: ^1.0.6-nullsafety
+  flutter_launcher_icons: ^0.13.1
 
 dev_dependencies:
   flutter_test:
@@ -93,3 +94,7 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+flutter_icons:
+  image_path: "assets/icon/ic_launcher.png" 
+  android: true
+  ios: true
